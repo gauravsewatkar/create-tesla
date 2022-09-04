@@ -11,9 +11,9 @@ function Header() {
   return (
     <div>
       <Container>
-        <a>
+        <div>
           <img src='/images/logo.svg' alt='logo' />
-        </a>
+        </div>
 
         <Menu>
           {cars &&
@@ -25,8 +25,8 @@ function Header() {
         </Menu>
 
         <RightMenu>
-          <a href=''>Shop</a>
-          <a href=''>Tesla Account</a>
+          <a href='#/'>Shop</a>
+          <a href='#/'>Tesla Account</a>
           <CustomMenu onClick={() => setBurgerStatus(true)} />
         </RightMenu>
 
@@ -43,19 +43,19 @@ function Header() {
               </li>
             ))}
           <li>
-            <a href='#'>Existing Inventory</a>
+            <a href='#/'>Existing Inventory</a>
           </li>
           <li>
-            <a href='#'>Used Inventory</a>
+            <a href='#/'>Used Inventory</a>
           </li>
           <li>
-            <a href='#'>Trade-in</a>
+            <a href='#/'>Trade-in</a>
           </li>
           <li>
-            <a href='#'>CyberTruck</a>
+            <a href='#/'>CyberTruck</a>
           </li>
           <li>
-            <a href='#'>Roadster</a>
+            <a href='#/'>Roadster</a>
           </li>
         </BurgerNav>
       </Container>
